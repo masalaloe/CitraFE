@@ -39,7 +39,14 @@ $(function () {
 });
 
 async function getData() {
-  const response = await fetch("https://api.citra-emu.org/lobby");
+  let url = "https://cors-anywhere.herokuapp.com/https://api.citra-emu.org/lobby";
+  //   let url = "https://api.citra-emu.org/lobby";
+  var requestOptions = {
+    mode: "cors",
+    headers: {},
+  };
+
+  const response = await fetch(url, requestOptions);
   const data = await response.json();
   return data.rooms;
 }
