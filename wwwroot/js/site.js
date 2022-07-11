@@ -69,6 +69,11 @@ $(function () {
       enabled: true,
       pageSize: 10,
     },
+    export: {
+      enabled: true,
+      allowExportSelectedData: true,
+      fileName: "ExportedFile",
+    },
     pager: {
       showPageSizeSelector: true,
       allowedPageSizes: [10, 20, 50],
