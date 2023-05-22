@@ -151,7 +151,7 @@ $(function () {
 
 async function getData() {
   //let url = proxy + "https://api.citra-emu.org/lobby";
-  et url = "https://api.citra-emu.org/lobby";
+  let url = "https://api.citra-emu.org/lobby";
   var requestOptions = {
     mode: "cors",
     headers: {},
